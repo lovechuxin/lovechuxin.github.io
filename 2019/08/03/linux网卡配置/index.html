@@ -7,17 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="用户与组useradd  xxx     新建用户passwd          修改用户密码su     切换用户userdel     删除用户（如果删除不了，find / -name 111              rm -rf 111                cd /var/spool/mail       rm -rf 111）     userdel -r  全部删除 hom">
+  <meta name="description" content="centos7 网卡配置centos7网卡配置文件：/etc/sysconfig/network-scirpt/ifcfg-enoxxxxxx            将ONBOOT=yes是开启动态网络（DHCP） 修改静态网络：修改BOOTPROTO=staticIPV6INIT=noIPV6_AUTOCONF=noONBOOT=yesIPADDR=192.168.7.XXXGATEWAY=1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2019/07/31/用户与组/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/03/linux网卡配置/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="用户与组useradd  xxx     新建用户passwd          修改用户密码su     切换用户userdel     删除用户（如果删除不了，find / -name 111              rm -rf 111                cd /var/spool/mail       rm -rf 111）     userdel -r  全部删除 hom">
+<meta property="og:description" content="centos7 网卡配置centos7网卡配置文件：/etc/sysconfig/network-scirpt/ifcfg-enoxxxxxx            将ONBOOT=yes是开启动态网络（DHCP） 修改静态网络：修改BOOTPROTO=staticIPV6INIT=noIPV6_AUTOCONF=noONBOOT=yesIPADDR=192.168.7.XXXGATEWAY=1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-31T12:16:05.567Z">
+<meta property="og:updated_time" content="2019-08-03T14:01:54.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="用户与组useradd  xxx     新建用户passwd          修改用户密码su     切换用户userdel     删除用户（如果删除不了，find / -name 111              rm -rf 111                cd /var/spool/mail       rm -rf 111）     userdel -r  全部删除 hom">
+<meta name="twitter:description" content="centos7 网卡配置centos7网卡配置文件：/etc/sysconfig/network-scirpt/ifcfg-enoxxxxxx            将ONBOOT=yes是开启动态网络（DHCP） 修改静态网络：修改BOOTPROTO=staticIPV6INIT=noIPV6_AUTOCONF=noONBOOT=yesIPADDR=192.168.7.XXXGATEWAY=1">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-用户与组" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-linux网卡配置" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/07/31/用户与组/" class="article-date">
-  <time datetime="2019-07-31T11:46:28.716Z" itemprop="datePublished">2019-07-31</time>
+    <a href="/2019/08/03/linux网卡配置/" class="article-date">
+  <time datetime="2019-08-03T14:01:54.786Z" itemprop="datePublished">2019-08-03</time>
 </a>
     
   </div>
@@ -77,13 +77,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="用户与组"><a href="#用户与组" class="headerlink" title="用户与组"></a>用户与组</h2><p>useradd  xxx     新建用户<br>passwd          修改用户密码<br>su     切换用户<br>userdel     删除用户（如果删除不了，find / -name 111              rm -rf 111                cd /var/spool/mail       rm -rf 111）     userdel -r  全部删除</p>
-<p>home下可以查看用户        cat/etc/passwd/ 存储用户信息<br>第3位<br>uid唯一标识0为最高权限<br>•在centOS7中UID为1-999时为虚拟账户，不需要登录，傀儡账户。普通用户1000起，超级用户是0<br>•在centOS6中UID为1-499时为虚拟账户，不需要登录，傀儡账户。普通用户500起，超级用户是0<br>第4位是组gid</p>
+<h2 id="centos7-网卡配置"><a href="#centos7-网卡配置" class="headerlink" title="centos7 网卡配置"></a>centos7 网卡配置</h2><p>centos7网卡配置文件：/etc/sysconfig/network-scirpt/ifcfg-enoxxxxxx            将ONBOOT=yes是开启动态网络（DHCP）</p>
+<p>修改静态网络：<br>修改BOOTPROTO=static<br>IPV6INIT=no<br>IPV6_AUTOCONF=no<br>ONBOOT=yes<br>IPADDR=192.168.7.XXX<br>GATEWAY=192.168.7.1<br>NETMASK=255.255.255.0<br>systemctl  restart  network  重启网卡</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/31/用户与组/" data-id="cjyr6q8f40000vgrmxgl841fi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/linux网卡配置/" data-id="cjyvmrkc80005jkrmernye8pa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -92,8 +92,17 @@
     
 <nav id="article-nav">
   
+    <a href="/2019/08/03/html基础/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2019/07/31/linux网卡配置/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2019/07/31/linux常用命令/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title"></div>
     </a>
@@ -119,7 +128,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
     </div>
   </div>
 
@@ -132,19 +141,23 @@
       <ul>
         
           <li>
-            <a href="/2019/07/31/用户与组/">(no title)</a>
+            <a href="/2019/08/03/PHP基础/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/07/31/linux网卡配置/">(no title)</a>
+            <a href="/2019/08/03/js基础/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/07/31/新建文本文档/">操作系统的分类</a>
+            <a href="/2019/08/03/html基础/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/07/24/hello-world/">Hello World</a>
+            <a href="/2019/08/03/linux网卡配置/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/31/linux常用命令/">(no title)</a>
           </li>
         
       </ul>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="html基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/08/03/js基础/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="html基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-03T14:26:01.278Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="html基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-js基础" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/03/js基础/" class="article-date">
+  <time datetime="2019-08-03T14:07:14.391Z" itemprop="datePublished">2019-08-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="html基础"><a href="#html基础" class="headerlink" title="html基础"></a>html基础</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：</span><br><span class="line">  • 通过 id 找到 HTML 元素</span><br><span class="line">  • 通过标签名找到 HTML 元素</span><br><span class="line">  • 通过类名找到 HTML 元素</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">通过 id 查找 HTML 元素</span><br><span class="line"> 在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。</span><br><span class="line"> var x= document.getElementById(<span class="string">"intro"</span>)</span><br><span class="line">       </span><br><span class="line"> </span><br><span class="line">通过标签名查找 HTML 元素</span><br><span class="line"> 查找 id=<span class="string">"main"</span> 的元素，然后查找 id=<span class="string">"main"</span> 元素中的所有 &lt;p&gt;  元素：</span><br><span class="line"> var x=document.getElementById(<span class="string">"main"</span>);</span><br><span class="line"> var y=x.getElementsByTagName(<span class="string">"p"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">通过类名找到 HTML 元素</span><br><span class="line"> 通过getElementsByClassName 函数来查找 class=<span class="string">"intro"</span> 的元素：</span><br><span class="line"> var x=document.getElementsByClassName(<span class="string">"intro"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">改变 HTML 输出流</span><br><span class="line">  JavaScript 能够创建动态的 HTML 内容：</span><br><span class="line"> document.write() 可用于直接向 HTML 输出流写内容。</span><br><span class="line"> 比如 document.write(Date());   可以写入时间</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">改变 HTML 内容</span><br><span class="line"> 修改 HTML 内容的方法是使用 innerHTML 属性</span><br><span class="line">  document.getElementById(id).innerHTML=新的</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">改变 HTML 属性</span><br><span class="line">  如改变 HTML 元素的属性</span><br><span class="line"> document.getElementById(id).src=<span class="string">"landscape.jpg"</span>; --&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjyvmrkbn0003jkrm2x68b66p" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/03/PHP基础/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/03/html基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/03/PHP基础/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/03/js基础/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/03/html基础/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/03/linux网卡配置/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/31/linux常用命令/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

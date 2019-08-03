@@ -7,13 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="php基础12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/03/PHP基础/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="php基础12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-03T14:26:30.512Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="php基础12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-PHP基础" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-PHP基础" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/03/PHP基础/" class="article-date">
   <time datetime="2019-08-03T14:09:19.453Z" itemprop="datePublished">2019-08-03</time>
@@ -85,259 +87,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-js基础" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/03/js基础/" class="article-date">
-  <time datetime="2019-08-03T14:07:14.391Z" itemprop="datePublished">2019-08-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="html基础"><a href="#html基础" class="headerlink" title="html基础"></a>html基础</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：</span><br><span class="line">  • 通过 id 找到 HTML 元素</span><br><span class="line">  • 通过标签名找到 HTML 元素</span><br><span class="line">  • 通过类名找到 HTML 元素</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">通过 id 查找 HTML 元素</span><br><span class="line"> 在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。</span><br><span class="line"> var x= document.getElementById(<span class="string">"intro"</span>)</span><br><span class="line">       </span><br><span class="line"> </span><br><span class="line">通过标签名查找 HTML 元素</span><br><span class="line"> 查找 id=<span class="string">"main"</span> 的元素，然后查找 id=<span class="string">"main"</span> 元素中的所有 &lt;p&gt;  元素：</span><br><span class="line"> var x=document.getElementById(<span class="string">"main"</span>);</span><br><span class="line"> var y=x.getElementsByTagName(<span class="string">"p"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">通过类名找到 HTML 元素</span><br><span class="line"> 通过getElementsByClassName 函数来查找 class=<span class="string">"intro"</span> 的元素：</span><br><span class="line"> var x=document.getElementsByClassName(<span class="string">"intro"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">改变 HTML 输出流</span><br><span class="line">  JavaScript 能够创建动态的 HTML 内容：</span><br><span class="line"> document.write() 可用于直接向 HTML 输出流写内容。</span><br><span class="line"> 比如 document.write(Date());   可以写入时间</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">改变 HTML 内容</span><br><span class="line"> 修改 HTML 内容的方法是使用 innerHTML 属性</span><br><span class="line">  document.getElementById(id).innerHTML=新的</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">改变 HTML 属性</span><br><span class="line">  如改变 HTML 元素的属性</span><br><span class="line"> document.getElementById(id).src=<span class="string">"landscape.jpg"</span>; --&gt;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjyvmrkbn0003jkrm2x68b66p" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
+  
+    <a href="/2019/08/03/js基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
   
 </article>
-
-
-  
-    <article id="post-html基础" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/03/html基础/" class="article-date">
-  <time datetime="2019-08-03T14:06:04.386Z" itemprop="datePublished">2019-08-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><pre><code class="bash">什么是HTML：
-  • HTML指的是超文本标记语言
-  • HTML不是一种编程语言，而是一种标记语言
-  • 标记语言是一套标记标签，例如<span class="string">'&lt;div&gt;&lt;/div&gt;'</span> ‘&lt;p&gt;&lt;/p&gt;’
-  •HTML使用标记标签来描述网页
-
-
-
-
-
-
-
-一些简单的标签：
-  •&lt;html&gt; ：&lt;html&gt;与&lt;/html&gt;之间的文本描述网页
-  •&lt;body&gt;：&lt;body&gt;与&lt;/body&gt;之间的文本是可见的页面内容
-  •&lt;h1&gt;这是一个标题&lt;/h1&gt;：&lt;h1&gt;与&lt;/h1&gt; 之间的文本被显示为标题
-  •&lt;p&gt;这是一个段落&lt;/p&gt;    ：&lt;p&gt;与&lt;/p&gt;之间的文本被显示为段落
-
-
-
-
-
-
-
-  HTML中的标签：
-   •HTML标题是通过‘&lt;h1&gt;-&lt;h6&gt;’等标签进行定义的
-   •HTML段落是通过‘&lt;p&gt;’标签进行定义的
-   •HTML链接是通过‘&lt;a&gt;’标签进行定义的
-   •HTML图像是通过‘&lt;img&gt;’标签进行定义的
-   •HTML列表是通过‘&lt;ul&gt;’和<span class="string">'&lt;ol&gt;'</span>标签进行定义的。其中‘ul’一般用来表示无序列表，‘ol’用来表示有序列表
-   •HTML表格是通过‘table’ ‘thead’ ‘tbody’ ‘th’ ‘td’ 等标签来定义的
-
-img src=“地址”   显示图片
-
-
-
-
-
-HTML form表单：
-   &lt;form action=<span class="string">"www.baidu.com"</span>method=<span class="string">"get"</span> enctype=<span class="string">"application/x-www-form-urlencoded"</span>&gt; 
-               • Action属性表明表单将要提交到哪里
-               • Method表示提交用到的方法分别为get个post可选
-               • Enctype规定在发送表单数据前对数据进行编码的格式
-
-
-
-
-
-
-
-输入框‘&lt;input/&gt;’标签最常用
-
-   • <span class="built_in">type</span>=“text”普通的文本输入框
-   • <span class="built_in">type</span>=“password” 带型号的密码输入框
-   • <span class="built_in">type</span>=“radio”单选框              同一类型要有统一的name属性，表明是一类+
-   • <span class="built_in">type</span>=<span class="string">"checkbox"</span>复选框        添加checked属性会默认选中
-   • <span class="built_in">type</span>=“file”文件上传选择
-   • <span class="built_in">type</span>=“email”带简单验证的邮箱输入
-   • &lt;texteara&gt;标签input只能单行输入，texteara可以多行输入
-    &lt;center&gt;         &lt;/center&gt;    将代码输出的居中
-
-
-
-
-
-CSS样式的引入：
-     行内样式
-          &lt;p style= “display:none” &gt; &lt;/p&gt;
-
-      内嵌式
-           一般指&lt;head&gt;标签中的&lt;style&gt;样式
-
-       外链式
-            通过&lt;link&gt;标签引入外部的CSS文件
-
-        导入外部样式
-            用@import在&lt;head&gt;与&lt;/head&gt;间引入</code></pre>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjyvmrkbk0002jkrmm7tsdivy" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux网卡配置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/03/linux网卡配置/" class="article-date">
-  <time datetime="2019-08-03T14:01:54.786Z" itemprop="datePublished">2019-08-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="centos7-网卡配置"><a href="#centos7-网卡配置" class="headerlink" title="centos7 网卡配置"></a>centos7 网卡配置</h2><p>centos7网卡配置文件：/etc/sysconfig/network-scirpt/ifcfg-enoxxxxxx            将ONBOOT=yes是开启动态网络（DHCP）</p>
-<p>修改静态网络：<br>修改BOOTPROTO=static<br>IPV6INIT=no<br>IPV6_AUTOCONF=no<br>ONBOOT=yes<br>IPADDR=192.168.7.XXX<br>GATEWAY=192.168.7.1<br>NETMASK=255.255.255.0<br>systemctl  restart  network  重启网卡</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/linux网卡配置/" data-id="cjyvmrkc80005jkrmernye8pa" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux常用命令" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/31/linux常用命令/" class="article-date">
-  <time datetime="2019-07-31T11:46:28.716Z" itemprop="datePublished">2019-07-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="LINUX常用命令"><a href="#LINUX常用命令" class="headerlink" title="LINUX常用命令"></a>LINUX常用命令</h2><p>linux命令格式：命令名+空格+参数（ls -al /temp）</p>
-<p>pwd：当前默认的用户目录<br>sudo：以管理员身份运行<br>cd：进入一个文件夹<br>su：切换用户<br>rm -rf ：删除文件<br>mkdir：创建文件夹<br>cd .. ：返回上一目录<br>vim/vi+文件后缀  生成一个新文件并编辑    i：插入编辑    w：保存   q：退出   !：强制执行<br>clear 或者ctrl+l：清屏<br>cat：查看当前文件内容<br>ifconfig：查看当前网卡信息=ipconfig</p>
-<p>开关机：<br>reboot：重启         init 6：重启        shutdown -r：重启          init 0：关机        poweroff：关机        shutdown halt  poweroff：关机            logout exit：退出</p>
-<p>文件读写操作：<br>touch：新建文件（ touch /tmp/hello.txt）         mkdir：新建文件夹（ mkdir hello）<br>mkdip -p：自动逐级建立文件夹<br>rm：删除文件（rm hello.txt）          rmdir删除文件夹（rmdir hello）<br>rm -rf：删除一个文件夹，文件夹内含有文件（ -r 参数逐级一个一个删除文件夹内容，-f 参数，不提示直接删除）</p>
-<p>复制和移动：<br>cp：复制文件或文件夹到指定位置                mv：移动文件或文件夹到指定位置<br>cp修改文件时备份  改成bak文件<br>cp -r 拷贝文件所有文件</p>
-<p>查看文件：<br>cat：显示一个文件的内容（cat /etc/passwd）           more：显示一个文件的内容，并且可控（more /etc/passwd）                   head：显示一个文件的前几行（head/etc/passwd）（默认10行） -n 选择几行               tail：显示文件的后几行，-f 动态查看文件里新增的内容多一行显示一行（tail/etc/passwd）</p>
-<p>搜索：<br>find：全盘查找文件               grep：全盘所有的文件中查找某些字符，或者在某个文件中查找               whereis：查找某个命令所在位置                which 找查找当前用户<br>greap -f：指定包含搜索模式的文件<br>bg 1：可以以一个任务在后台运行                 fg 1：放到前台运行             nohup：使命令永久进行（nohup COMMAND&amp;这样命令就可以永久在后台执行）           jobs：查看所有的后台任务</p>
-<blockquote>
-<p>：重定向  覆盖原来文件的内容          &gt;&gt;：不会覆盖原来文件的内容，而是追加到文件的尾部               &amp;：后台运行符          </p>
-</blockquote>
-<p>ls -a 显示隐藏文件                 ls -l  显示详细信息</p>
-<p>压缩/解压缩文件<br>tar -zxvf 解压文件   tar -zcvf 压缩文件</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/31/linux常用命令/" data-id="cjyvmrkbp0004jkrmo9gegicr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/24/hello-world/" class="article-date">
-  <time datetime="2019-07-24T02:36:30.398Z" itemprop="datePublished">2019-07-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/24/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/24/hello-world/" data-id="cjyvmrkbg0001jkrm1nkf8uc0" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         

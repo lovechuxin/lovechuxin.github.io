@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="LINUX常用命令linux命令格式：命令名+空格+参数（ls -al /temp） pwd：当前默认的用户目录sudo：以管理员身份运行cd：进入一个文件夹su：切换用户rm -rf ：删除文件mkdir：创建文件夹cd .. ：返回上一目录vim/vi+文件后缀  生成一个新文件并编辑    i：插入编辑    w：保存   q：退出   !：强制执行clear 或者ctrl+l：清屏cat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/07/31/linux常用命令/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="LINUX常用命令linux命令格式：命令名+空格+参数（ls -al /temp） pwd：当前默认的用户目录sudo：以管理员身份运行cd：进入一个文件夹su：切换用户rm -rf ：删除文件mkdir：创建文件夹cd .. ：返回上一目录vim/vi+文件后缀  生成一个新文件并编辑    i：插入编辑    w：保存   q：退出   !：强制执行clear 或者ctrl+l：清屏cat">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-03T13:58:32.474Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="LINUX常用命令linux命令格式：命令名+空格+参数（ls -al /temp） pwd：当前默认的用户目录sudo：以管理员身份运行cd：进入一个文件夹su：切换用户rm -rf ：删除文件mkdir：创建文件夹cd .. ：返回上一目录vim/vi+文件后缀  生成一个新文件并编辑    i：插入编辑    w：保存   q：退出   !：强制执行clear 或者ctrl+l：清屏cat">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-linux常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/31/linux常用命令/" class="article-date">
+  <time datetime="2019-07-31T11:46:28.716Z" itemprop="datePublished">2019-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="LINUX常用命令"><a href="#LINUX常用命令" class="headerlink" title="LINUX常用命令"></a>LINUX常用命令</h2><p>linux命令格式：命令名+空格+参数（ls -al /temp）</p>
+<p>pwd：当前默认的用户目录<br>sudo：以管理员身份运行<br>cd：进入一个文件夹<br>su：切换用户<br>rm -rf ：删除文件<br>mkdir：创建文件夹<br>cd .. ：返回上一目录<br>vim/vi+文件后缀  生成一个新文件并编辑    i：插入编辑    w：保存   q：退出   !：强制执行<br>clear 或者ctrl+l：清屏<br>cat：查看当前文件内容<br>ifconfig：查看当前网卡信息=ipconfig</p>
+<p>开关机：<br>reboot：重启         init 6：重启        shutdown -r：重启          init 0：关机        poweroff：关机        shutdown halt  poweroff：关机            logout exit：退出</p>
+<p>文件读写操作：<br>touch：新建文件（ touch /tmp/hello.txt）         mkdir：新建文件夹（ mkdir hello）<br>mkdip -p：自动逐级建立文件夹<br>rm：删除文件（rm hello.txt）          rmdir删除文件夹（rmdir hello）<br>rm -rf：删除一个文件夹，文件夹内含有文件（ -r 参数逐级一个一个删除文件夹内容，-f 参数，不提示直接删除）</p>
+<p>复制和移动：<br>cp：复制文件或文件夹到指定位置                mv：移动文件或文件夹到指定位置<br>cp修改文件时备份  改成bak文件<br>cp -r 拷贝文件所有文件</p>
+<p>查看文件：<br>cat：显示一个文件的内容（cat /etc/passwd）           more：显示一个文件的内容，并且可控（more /etc/passwd）                   head：显示一个文件的前几行（head/etc/passwd）（默认10行） -n 选择几行               tail：显示文件的后几行，-f 动态查看文件里新增的内容多一行显示一行（tail/etc/passwd）</p>
+<p>搜索：<br>find：全盘查找文件               grep：全盘所有的文件中查找某些字符，或者在某个文件中查找               whereis：查找某个命令所在位置                which 找查找当前用户<br>greap -f：指定包含搜索模式的文件<br>bg 1：可以以一个任务在后台运行                 fg 1：放到前台运行             nohup：使命令永久进行（nohup COMMAND&amp;这样命令就可以永久在后台执行）           jobs：查看所有的后台任务</p>
+<blockquote>
+<p>：重定向  覆盖原来文件的内容          &gt;&gt;：不会覆盖原来文件的内容，而是追加到文件的尾部               &amp;：后台运行符          </p>
+</blockquote>
+<p>ls -a 显示隐藏文件                 ls -l  显示详细信息</p>
+<p>压缩/解压缩文件<br>tar -zxvf 解压文件   tar -zcvf 压缩文件</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/31/linux常用命令/" data-id="cjyvmrkbp0004jkrmo9gegicr" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/03/linux网卡配置/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/03/PHP基础/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/03/js基础/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/03/html基础/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/03/linux网卡配置/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/31/linux常用命令/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
