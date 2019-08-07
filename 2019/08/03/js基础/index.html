@@ -7,17 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="html基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找">
+  <meta name="description" content="js基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找到">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2019/08/03/js基础/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="html基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找">
+<meta property="og:description" content="js基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找到">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-03T14:26:01.278Z">
+<meta property="og:updated_time" content="2019-08-07T14:06:02.739Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="html基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找">
+<meta name="twitter:description" content="js基础123456789101112131415161718192021222324252627282930313233343536373839404142434445 &amp;lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：  • 通过 id 找到 HTML 元素  • 通过标签名找到 HTML 元素  • 通过类名找到">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -77,11 +77,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="html基础"><a href="#html基础" class="headerlink" title="html基础"></a>html基础</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：</span><br><span class="line">  • 通过 id 找到 HTML 元素</span><br><span class="line">  • 通过标签名找到 HTML 元素</span><br><span class="line">  • 通过类名找到 HTML 元素</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">通过 id 查找 HTML 元素</span><br><span class="line"> 在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。</span><br><span class="line"> var x= document.getElementById(<span class="string">"intro"</span>)</span><br><span class="line">       </span><br><span class="line"> </span><br><span class="line">通过标签名查找 HTML 元素</span><br><span class="line"> 查找 id=<span class="string">"main"</span> 的元素，然后查找 id=<span class="string">"main"</span> 元素中的所有 &lt;p&gt;  元素：</span><br><span class="line"> var x=document.getElementById(<span class="string">"main"</span>);</span><br><span class="line"> var y=x.getElementsByTagName(<span class="string">"p"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">通过类名找到 HTML 元素</span><br><span class="line"> 通过getElementsByClassName 函数来查找 class=<span class="string">"intro"</span> 的元素：</span><br><span class="line"> var x=document.getElementsByClassName(<span class="string">"intro"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">改变 HTML 输出流</span><br><span class="line">  JavaScript 能够创建动态的 HTML 内容：</span><br><span class="line"> document.write() 可用于直接向 HTML 输出流写内容。</span><br><span class="line"> 比如 document.write(Date());   可以写入时间</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">改变 HTML 内容</span><br><span class="line"> 修改 HTML 内容的方法是使用 innerHTML 属性</span><br><span class="line">  document.getElementById(id).innerHTML=新的</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">改变 HTML 属性</span><br><span class="line">  如改变 HTML 元素的属性</span><br><span class="line"> document.getElementById(id).src=<span class="string">"landscape.jpg"</span>; --&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="js基础"><a href="#js基础" class="headerlink" title="js基础"></a>js基础</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：</span><br><span class="line">  • 通过 id 找到 HTML 元素</span><br><span class="line">  • 通过标签名找到 HTML 元素</span><br><span class="line">  • 通过类名找到 HTML 元素</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">通过 id 查找 HTML 元素</span><br><span class="line"> 在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。</span><br><span class="line"> var x= document.getElementById(<span class="string">"intro"</span>)</span><br><span class="line">       </span><br><span class="line"> </span><br><span class="line">通过标签名查找 HTML 元素</span><br><span class="line"> 查找 id=<span class="string">"main"</span> 的元素，然后查找 id=<span class="string">"main"</span> 元素中的所有 &lt;p&gt;  元素：</span><br><span class="line"> var x=document.getElementById(<span class="string">"main"</span>);</span><br><span class="line"> var y=x.getElementsByTagName(<span class="string">"p"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">通过类名找到 HTML 元素</span><br><span class="line"> 通过getElementsByClassName 函数来查找 class=<span class="string">"intro"</span> 的元素：</span><br><span class="line"> var x=document.getElementsByClassName(<span class="string">"intro"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">改变 HTML 输出流</span><br><span class="line">  JavaScript 能够创建动态的 HTML 内容：</span><br><span class="line"> document.write() 可用于直接向 HTML 输出流写内容。</span><br><span class="line"> 比如 document.write(Date());   可以写入时间</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">改变 HTML 内容</span><br><span class="line"> 修改 HTML 内容的方法是使用 innerHTML 属性</span><br><span class="line">  document.getElementById(id).innerHTML=新的</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">改变 HTML 属性</span><br><span class="line">  如改变 HTML 元素的属性</span><br><span class="line"> document.getElementById(id).src=<span class="string">"landscape.jpg"</span>; --&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjyvmrkbn0003jkrm2x68b66p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjz1cbzrz0003f0rm5hxxz8vg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,23 +139,23 @@
       <ul>
         
           <li>
+            <a href="/2019/08/07/新闻/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/07/五角星/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/07/素数/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2019/08/03/PHP基础/">(no title)</a>
           </li>
         
           <li>
             <a href="/2019/08/03/js基础/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/03/html基础/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/03/linux网卡配置/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/07/31/linux常用命令/">(no title)</a>
           </li>
         
       </ul>

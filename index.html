@@ -62,6 +62,87 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-新闻" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/07/新闻/" class="article-date">
+  <time datetime="2019-08-07T14:10:13.437Z" itemprop="datePublished">2019-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="新闻"><a href="#新闻" class="headerlink" title="新闻"></a>新闻</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt; news&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;table&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">    &lt;th&gt;热度&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;标题&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;作者&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;发表时间&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;操作&lt;/th&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="variable">$f</span> = fopen(<span class="string">'data/news.db'</span>,<span class="string">'r'</span>) ;</span><br><span class="line"><span class="keyword">for</span>(<span class="variable">$i</span>=1 ; <span class="variable">$i</span>&lt;=10 ;<span class="variable">$i</span>++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (feof(<span class="variable">$f</span>)) &#123;</span><br><span class="line">        <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable">$data</span> = fgets(<span class="variable">$f</span>);</span><br><span class="line">    <span class="variable">$data_array</span> = explode(<span class="string">'||'</span>, <span class="variable">$data</span>);</span><br><span class="line">    <span class="variable">$hot</span> = <span class="variable">$data_array</span>[5];</span><br><span class="line">    <span class="variable">$title</span> = base64_decode(<span class="variable">$data_array</span>[1]);</span><br><span class="line">    <span class="variable">$author</span> = <span class="variable">$data_array</span>[3];</span><br><span class="line">    <span class="variable">$date</span> = <span class="variable">$data_array</span>[4];</span><br><span class="line">    <span class="built_in">echo</span> &lt;&lt;&lt;EOF</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$hot</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$title</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$author</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$date</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;|&#125;&lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">EOF;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/07/新闻/" data-id="cjz1cbzs60006f0rmshqsj4f1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-五角星" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/07/五角星/" class="article-date">
+  <time datetime="2019-08-07T14:07:40.112Z" itemprop="datePublished">2019-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="php输出五角星"><a href="#php输出五角星" class="headerlink" title="php输出五角星"></a>php输出五角星</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"\n\n"</span>;</span><br><span class="line"><span class="keyword">for</span> ( <span class="variable">$i1</span> = 1; <span class="variable">$i1</span> &lt; 6; <span class="variable">$i1</span>++ )                    /*这是五角星的上面一个角*/</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$j1</span> = 1; <span class="variable">$j1</span> &lt; 19 - <span class="variable">$i1</span>; <span class="variable">$j1</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">" "</span> );</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$k1</span> = 1; <span class="variable">$k1</span> &lt;= 2 * <span class="variable">$i1</span> - 1; <span class="variable">$k1</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">"*"</span> );</span><br><span class="line">        <span class="built_in">printf</span>( <span class="string">"\n"</span> );</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="variable">$i2</span> = 1; <span class="variable">$i2</span> &lt; 5; <span class="variable">$i2</span>++ )                    /*这是五角星的中间两个角*/</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$j2</span> = 1; <span class="variable">$j2</span> &lt; 3 * <span class="variable">$i2</span> - 3; <span class="variable">$j2</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">" "</span> );</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$k2</span> = 1; <span class="variable">$k2</span> &lt;= 42 - 6 * <span class="variable">$i2</span>; <span class="variable">$k2</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">"*"</span> );</span><br><span class="line">        <span class="built_in">printf</span>( <span class="string">"\n"</span> );</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> ( <span class="variable">$i3</span> = 1; <span class="variable">$i3</span> &lt; 3; <span class="variable">$i3</span>++ ) /*这是中间与下部相接的部分*/</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$j3</span> = 1; <span class="variable">$j3</span> &lt; 12 - <span class="variable">$i3</span>; <span class="variable">$j3</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">" "</span> );</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$k3</span> = 1; <span class="variable">$k3</span> &lt;= 12 + 2 * <span class="variable">$i3</span>; <span class="variable">$k3</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">"*"</span> );</span><br><span class="line">        <span class="built_in">printf</span>( <span class="string">"\n"</span> );</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> ( <span class="variable">$i4</span> = 1; <span class="variable">$i4</span> &lt; 5; <span class="variable">$i4</span>++ ) /*这是五角星的下面两个角*/</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$j4</span> = 1; <span class="variable">$j4</span> &lt; 10 - <span class="variable">$i4</span>; <span class="variable">$j4</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">" "</span> );</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$k4</span> = 1; <span class="variable">$k4</span> &lt;= 10 - 2 * <span class="variable">$i4</span>; <span class="variable">$k4</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">"*"</span> );</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$m4</span> = 1; <span class="variable">$m4</span> &lt; 6 * <span class="variable">$i4</span> - 3; <span class="variable">$m4</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">" "</span> );</span><br><span class="line">        <span class="keyword">for</span> ( <span class="variable">$n4</span> = 1; <span class="variable">$n4</span> &lt;= 10 - 2 * <span class="variable">$i4</span>; <span class="variable">$n4</span>++ )</span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">"*"</span> );</span><br><span class="line">        <span class="built_in">printf</span>( <span class="string">"\n"</span> );</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/07/五角星/" data-id="cjz1cbzs90007f0rm1fuwcoqz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-素数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/07/素数/" class="article-date">
+  <time datetime="2019-08-07T14:06:10.429Z" itemprop="datePublished">2019-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="php判断是否是素数"><a href="#php判断是否是素数" class="headerlink" title="php判断是否是素数"></a>php判断是否是素数</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"><span class="variable">$a</span> = fgets(STDIN) ;</span><br><span class="line"><span class="keyword">for</span> (<span class="variable">$i</span>=2 ; <span class="variable">$i</span>&lt;=<span class="variable">$a</span>-1; <span class="variable">$i</span>++)</span><br><span class="line">   &#123; <span class="variable">$b</span> = <span class="variable">$a</span> % <span class="variable">$i</span> ;</span><br><span class="line"> <span class="keyword">if</span> (<span class="variable">$b</span> == 0 )</span><br><span class="line">     <span class="built_in">break</span> ;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$i</span> &gt;= <span class="variable">$a</span>)</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"<span class="variable">$a</span> shisushu"</span> ;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"<span class="variable">$a</span> bushisushu"</span> ;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/07/素数/" data-id="cjz1cbzsb0008f0rms23pa5g1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-PHP基础" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/03/PHP基础/" class="article-date">
@@ -79,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjyvmrkb50000jkrm67w31v0k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjz1cbzrd0000f0rmjjuq2vds" class="article-share-link">Share</a>
       
       
     </footer>
@@ -102,11 +183,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="html基础"><a href="#html基础" class="headerlink" title="html基础"></a>html基础</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：</span><br><span class="line">  • 通过 id 找到 HTML 元素</span><br><span class="line">  • 通过标签名找到 HTML 元素</span><br><span class="line">  • 通过类名找到 HTML 元素</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">通过 id 查找 HTML 元素</span><br><span class="line"> 在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。</span><br><span class="line"> var x= document.getElementById(<span class="string">"intro"</span>)</span><br><span class="line">       </span><br><span class="line"> </span><br><span class="line">通过标签名查找 HTML 元素</span><br><span class="line"> 查找 id=<span class="string">"main"</span> 的元素，然后查找 id=<span class="string">"main"</span> 元素中的所有 &lt;p&gt;  元素：</span><br><span class="line"> var x=document.getElementById(<span class="string">"main"</span>);</span><br><span class="line"> var y=x.getElementsByTagName(<span class="string">"p"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">通过类名找到 HTML 元素</span><br><span class="line"> 通过getElementsByClassName 函数来查找 class=<span class="string">"intro"</span> 的元素：</span><br><span class="line"> var x=document.getElementsByClassName(<span class="string">"intro"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">改变 HTML 输出流</span><br><span class="line">  JavaScript 能够创建动态的 HTML 内容：</span><br><span class="line"> document.write() 可用于直接向 HTML 输出流写内容。</span><br><span class="line"> 比如 document.write(Date());   可以写入时间</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">改变 HTML 内容</span><br><span class="line"> 修改 HTML 内容的方法是使用 innerHTML 属性</span><br><span class="line">  document.getElementById(id).innerHTML=新的</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">改变 HTML 属性</span><br><span class="line">  如改变 HTML 元素的属性</span><br><span class="line"> document.getElementById(id).src=<span class="string">"landscape.jpg"</span>; --&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="js基础"><a href="#js基础" class="headerlink" title="js基础"></a>js基础</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!--想要通过 JavaScript操作 HTML 元素。为了做到这件事情，必须首先找到该元素。有三种方法来做这件事：</span><br><span class="line">  • 通过 id 找到 HTML 元素</span><br><span class="line">  • 通过标签名找到 HTML 元素</span><br><span class="line">  • 通过类名找到 HTML 元素</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">通过 id 查找 HTML 元素</span><br><span class="line"> 在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。</span><br><span class="line"> var x= document.getElementById(<span class="string">"intro"</span>)</span><br><span class="line">       </span><br><span class="line"> </span><br><span class="line">通过标签名查找 HTML 元素</span><br><span class="line"> 查找 id=<span class="string">"main"</span> 的元素，然后查找 id=<span class="string">"main"</span> 元素中的所有 &lt;p&gt;  元素：</span><br><span class="line"> var x=document.getElementById(<span class="string">"main"</span>);</span><br><span class="line"> var y=x.getElementsByTagName(<span class="string">"p"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">通过类名找到 HTML 元素</span><br><span class="line"> 通过getElementsByClassName 函数来查找 class=<span class="string">"intro"</span> 的元素：</span><br><span class="line"> var x=document.getElementsByClassName(<span class="string">"intro"</span>); </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">改变 HTML 输出流</span><br><span class="line">  JavaScript 能够创建动态的 HTML 内容：</span><br><span class="line"> document.write() 可用于直接向 HTML 输出流写内容。</span><br><span class="line"> 比如 document.write(Date());   可以写入时间</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">改变 HTML 内容</span><br><span class="line"> 修改 HTML 内容的方法是使用 innerHTML 属性</span><br><span class="line">  document.getElementById(id).innerHTML=新的</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">改变 HTML 属性</span><br><span class="line">  如改变 HTML 元素的属性</span><br><span class="line"> document.getElementById(id).src=<span class="string">"landscape.jpg"</span>; --&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjyvmrkbn0003jkrm2x68b66p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjz1cbzrz0003f0rm5hxxz8vg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -210,7 +291,7 @@ CSS样式的引入：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjyvmrkbk0002jkrmm7tsdivy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjz1cbzrv0002f0rm6yu1ldjk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -239,7 +320,7 @@ CSS样式的引入：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/linux网卡配置/" data-id="cjyvmrkc80005jkrmernye8pa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/linux网卡配置/" data-id="cjz1cbzs10004f0rmoodx0shm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -278,7 +359,7 @@ CSS样式的引入：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/31/linux常用命令/" data-id="cjyvmrkbp0004jkrmo9gegicr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/31/linux常用命令/" data-id="cjz1cbzs40005f0rmcva97mt3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -327,7 +408,7 @@ CSS样式的引入：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/24/hello-world/" data-id="cjyvmrkbg0001jkrm1nkf8uc0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/24/hello-world/" data-id="cjz1cbzrq0001f0rmi7fysf46" class="article-share-link">Share</a>
       
       
     </footer>
@@ -368,23 +449,23 @@ CSS样式的引入：
       <ul>
         
           <li>
+            <a href="/2019/08/07/新闻/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/07/五角星/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/07/素数/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2019/08/03/PHP基础/">(no title)</a>
           </li>
         
           <li>
             <a href="/2019/08/03/js基础/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/03/html基础/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/03/linux网卡配置/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/07/31/linux常用命令/">(no title)</a>
           </li>
         
       </ul>
