@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-新闻" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-新闻主页" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/08/07/新闻/" class="article-date">
-  <time datetime="2019-08-07T14:10:13.437Z" itemprop="datePublished">2019-08-07</time>
+    <a href="/2019/08/11/新闻主页/" class="article-date">
+  <time datetime="2019-08-11T11:23:43.612Z" itemprop="datePublished">2019-08-11</time>
 </a>
     
   </div>
@@ -75,11 +75,92 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="新闻"><a href="#新闻" class="headerlink" title="新闻"></a>新闻</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt; news&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;table&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">    &lt;th&gt;热度&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;标题&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;作者&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;发表时间&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;操作&lt;/th&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="variable">$f</span> = fopen(<span class="string">'data/news.db'</span>,<span class="string">'r'</span>) ;</span><br><span class="line"><span class="keyword">for</span>(<span class="variable">$i</span>=1 ; <span class="variable">$i</span>&lt;=10 ;<span class="variable">$i</span>++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (feof(<span class="variable">$f</span>)) &#123;</span><br><span class="line">        <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable">$data</span> = fgets(<span class="variable">$f</span>);</span><br><span class="line">    <span class="variable">$data_array</span> = explode(<span class="string">'||'</span>, <span class="variable">$data</span>);</span><br><span class="line">    <span class="variable">$hot</span> = <span class="variable">$data_array</span>[5];</span><br><span class="line">    <span class="variable">$title</span> = base64_decode(<span class="variable">$data_array</span>[1]);</span><br><span class="line">    <span class="variable">$author</span> = <span class="variable">$data_array</span>[3];</span><br><span class="line">    <span class="variable">$date</span> = <span class="variable">$data_array</span>[4];</span><br><span class="line">    <span class="built_in">echo</span> &lt;&lt;&lt;EOF</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$hot</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$title</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$author</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;<span class="variable">$date</span>&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123;|&#125;&lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">EOF;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="新闻主页"><a href="#新闻主页" class="headerlink" title="新闻主页"></a>新闻主页</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_start() ;</span><br><span class="line">?&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;news&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;center&gt;</span><br><span class="line">    &lt;?php</span><br><span class="line">    <span class="keyword">if</span>(isset(<span class="variable">$_SESSION</span>[<span class="string">'uname'</span>]))&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"&lt;script&gt;alert('欢迎'); &lt;/script&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ?&gt;</span><br><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;热度&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;标题&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;作者&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;发表时间&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;操作&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;?php</span><br><span class="line">    <span class="variable">$f</span> = fopen(<span class="string">'data/news.db'</span>,<span class="string">'r'</span>);</span><br><span class="line">    <span class="variable">$i</span> = 1 ;</span><br><span class="line">    <span class="keyword">while</span> (!feof(<span class="variable">$f</span>))&#123;</span><br><span class="line">        <span class="variable">$tmp</span> = fgets(<span class="variable">$f</span>) ;</span><br><span class="line">        <span class="variable">$date</span> = explode(<span class="string">'||'</span>,<span class="variable">$tmp</span>) ;</span><br><span class="line">        <span class="keyword">if</span> (count(<span class="variable">$date</span>) != 8)&#123;</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        echo_table(<span class="variable">$date</span>) ;</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable">$i</span> &lt;= 3)&#123;</span><br><span class="line">            echo_info(<span class="variable">$date</span>) ;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">          <span class="variable">$i</span>++ ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ?&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/center&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;?php</span><br><span class="line"><span class="keyword">function</span> echo_info (<span class="variable">$data</span>)&#123;</span><br><span class="line">    <span class="variable">$content</span> = substr(base64_decode(<span class="variable">$data</span>[2]),0,100) ;</span><br><span class="line">    <span class="built_in">echo</span> &lt;&lt;&lt;EOF</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;&lt;img scr =<span class="string">"1"</span>&gt;&lt;/td&gt;</span><br><span class="line">        &lt;td colspan = <span class="string">"4"</span>&gt;&#123;<span class="variable">$content</span>&#125;&lt;/td&gt;</span><br><span class="line">     &lt;/tr&gt;</span><br><span class="line">EOF;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">function</span> echo_table(<span class="variable">$data</span>)&#123;</span><br><span class="line">    <span class="variable">$hot</span>= <span class="variable">$data</span>[5] ;</span><br><span class="line">    <span class="variable">$author</span> = <span class="variable">$data</span>[3] ;</span><br><span class="line">    <span class="variable">$add_date</span> = <span class="variable">$data</span>[4] ;</span><br><span class="line">    <span class="variable">$title</span> = base64_decode(<span class="variable">$data</span>[1]);</span><br><span class="line">    <span class="variable">$content</span> = base64_decode(<span class="variable">$data</span>[3]);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">echo</span>&lt;&lt;&lt;EOF</span><br><span class="line">   &lt;tr&gt;</span><br><span class="line">   &lt;td&gt;&#123;<span class="variable">$hot</span>&#125;&lt;/td&gt;</span><br><span class="line">   &lt;td&gt;&#123;<span class="variable">$title</span>&#125;&lt;/td&gt;</span><br><span class="line">   &lt;td&gt;&#123;<span class="variable">$author</span>&#125;&lt;/td&gt;</span><br><span class="line">   &lt;td&gt;&#123;<span class="variable">$add_date</span>&#125;&lt;/td&gt;</span><br><span class="line">   &lt;td&gt;👍|👎&lt;/td&gt;</span><br><span class="line">   </span><br><span class="line">   &lt;/tr&gt;</span><br><span class="line">EOF;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/07/新闻/" data-id="cjz1cbzs60006f0rmshqsj4f1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/新闻主页/" data-id="cjz6vwl9w0006cormsrc9qgrj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-增加新闻" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/11/增加新闻/" class="article-date">
+  <time datetime="2019-08-11T11:21:40.155Z" itemprop="datePublished">2019-08-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="增加新闻"><a href="#增加新闻" class="headerlink" title="增加新闻"></a>增加新闻</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_start() ;</span><br><span class="line"><span class="keyword">if</span> (!isset(<span class="variable">$_SESSION</span>[<span class="string">'uname'</span>])) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'&lt;script&gt;alert("请登录!");location.href="login.html";&lt;/script&gt;'</span>;</span><br><span class="line">    die();&#125;</span><br><span class="line"><span class="variable">$title</span> = base64_encode(<span class="variable">$_POST</span>[<span class="string">'title'</span>]) ;</span><br><span class="line"><span class="variable">$author</span> = base64_encode(<span class="variable">$_POST</span>[<span class="string">'author'</span>]);</span><br><span class="line"><span class="variable">$content</span> = base64_encode(<span class="variable">$_POST</span>[<span class="string">'content'</span>]) ;</span><br><span class="line"><span class="variable">$img_url</span> = base64_encode(<span class="variable">$_POST</span>[<span class="string">'img_url'</span>]) ;</span><br><span class="line"></span><br><span class="line"><span class="variable">$data</span> = <span class="string">"1||&#123;<span class="variable">$title</span>&#125;||&#123;<span class="variable">$content</span>&#125;||&#123;<span class="variable">$author</span>&#125;||time||0||null||&#123;<span class="variable">$img_url</span>&#125;\n"</span> ;</span><br><span class="line"><span class="variable">$f</span> = fopen(<span class="string">'data/news.db'</span>,<span class="string">'a'</span>) ;</span><br><span class="line">fwrite(<span class="variable">$f</span>,<span class="variable">$data</span>) ;</span><br><span class="line">fclose(<span class="variable">$f</span>) ;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"&lt;script&gt;alert('添加成功！'); location.href='index.php';&lt;/script&gt;"</span>;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;Edit News&lt;/title&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">        input&#123;</span><br><span class="line">            height: 30px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;h2&gt;请输入要添加的新闻&lt;/h2&gt;</span><br><span class="line">&lt;form action=<span class="string">"add_news.php"</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">    &lt;p&gt;标题&lt;/p&gt;</span><br><span class="line">       &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"title"</span> placeholder=<span class="string">"输入标题"</span>&gt;</span><br><span class="line">    &lt;p&gt;内容&lt;/p&gt;</span><br><span class="line">    &lt;textarea name=<span class="string">"content"</span> placeholder=<span class="string">"输入新闻内容"</span>&gt;&lt;/textarea&gt;</span><br><span class="line">    &lt;p&gt;作者&lt;/p&gt;</span><br><span class="line">       &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"author"</span> placeholder=<span class="string">"输入名字"</span>&gt;</span><br><span class="line">    &lt;p&gt; 图片 &lt;/p&gt;</span><br><span class="line">       &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"img_url"</span> placeholder=<span class="string">"输入图片"</span>&gt;</span><br><span class="line">       &lt;input <span class="built_in">type</span>=<span class="string">"submit"</span>value=<span class="string">"提交"</span>&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/form&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/11/增加新闻/" data-id="cjz6vwl9u0005cormyz314kca" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-登录页面" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/11/登录页面/" class="article-date">
+  <time datetime="2019-08-11T11:19:39.007Z" itemprop="datePublished">2019-08-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="登录页面"><a href="#登录页面" class="headerlink" title="登录页面"></a>登录页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_start();</span><br><span class="line"><span class="variable">$uname</span> = <span class="variable">$_POST</span>[<span class="string">'uname'</span>];</span><br><span class="line"><span class="variable">$upass</span> = <span class="variable">$_POST</span>[<span class="string">'upass'</span>] ;</span><br><span class="line"> <span class="keyword">if</span> (<span class="variable">$uname</span>&amp;&amp;<span class="variable">$upass</span>)&#123;</span><br><span class="line">     <span class="variable">$f</span> = fopen(<span class="string">'data/user.db'</span>,<span class="string">'r'</span>) ;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">while</span> (!feof(<span class="variable">$f</span>))&#123;</span><br><span class="line">         <span class="variable">$data</span> = fgets(<span class="variable">$f</span>) ;</span><br><span class="line">         <span class="variable">$arr</span> = explode(<span class="string">'||'</span>,<span class="variable">$data</span>) ;</span><br><span class="line"></span><br><span class="line">         <span class="keyword">if</span>(count(<span class="variable">$arr</span>) != 7)&#123;</span><br><span class="line">             <span class="built_in">continue</span> ;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">if</span> (<span class="variable">$arr</span>[1] == <span class="variable">$uname</span> &amp;&amp; <span class="variable">$arr</span>[2] == <span class="variable">$upass</span> )&#123;</span><br><span class="line">             <span class="variable">$_SESSION</span>[<span class="string">'uname'</span>] = <span class="variable">$uname</span> ;</span><br><span class="line"></span><br><span class="line">             <span class="built_in">echo</span> <span class="string">"&lt;script&gt;alert('登录成功');location.href='edit_news.html';&lt;/script&gt;"</span> ;</span><br><span class="line">             <span class="built_in">break</span> ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="built_in">echo</span> <span class="string">"&lt;script&gt;alert('登陆失败');location.href='login.html';&lt;/script&gt;"</span> ;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"> ?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;登录页面&lt;/title&gt;</span><br><span class="line">    &lt;link rel=<span class="string">"stylesheet"</span> <span class="built_in">type</span>=<span class="string">"text/css"</span> href=<span class="string">"css/login.css"</span>&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=<span class="string">"box"</span>&gt;</span><br><span class="line"></span><br><span class="line">   &lt;h1&gt;登录&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;form action=<span class="string">"login.php"</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line"></span><br><span class="line">        &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"uname"</span> placeholder=<span class="string">"手机号/邮箱/用户名"</span>&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;input <span class="built_in">type</span>=<span class="string">"password"</span> name=<span class="string">"upass"</span> placeholder=<span class="string">"密码"</span>&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;input class=<span class="string">"input_code"</span> <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"verifycode"</span> placeholder=<span class="string">"验证码"</span>&gt;</span><br><span class="line">        &lt;img class=<span class="string">"verifycode"</span> src=<span class="string">"https://passport.360.cn/captcha.php?m=create&amp;app=i360&amp;scene=login&amp;userip=&amp;level=default&amp;sign=8820a4&amp;r=1564540365&amp;border=none&amp;_=1564540365972"</span>&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;a class=<span class="string">"getpass"</span> href=<span class="string">"getpass.php"</span>&gt;忘记密码&lt;/a&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;input class=<span class="string">"login"</span> <span class="built_in">type</span>=<span class="string">"submit"</span> name=<span class="string">"submit"</span> value=<span class="string">"登录"</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/form&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">    background-image: url(<span class="string">"https://static2.ichunqiu.com/icq/resources/fileupload/hot/1554287726317.jpg"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    height: 500px;</span><br><span class="line">    width: 40%;</span><br><span class="line">    background: white;</span><br><span class="line">    margin: 150px 20% 0 40% ;</span><br><span class="line">    text-align: center;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.top &#123;</span><br><span class="line">    padding-top: 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">input &#123;</span><br><span class="line">    height: 43px;</span><br><span class="line">    width: 355px;</span><br><span class="line">    margin: 10px 0;</span><br><span class="line">    font-size: 17px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.input_code &#123;</span><br><span class="line">    width: 240px;</span><br><span class="line">    margin-left: 0px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.verifycode &#123;</span><br><span class="line">    margin-left: 10px;</span><br><span class="line">    height: 43px;</span><br><span class="line">    width: 100px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.getpass &#123;</span><br><span class="line">    margin-top: 50px;</span><br><span class="line">    margin-left: 50%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.login &#123;</span><br><span class="line">    background-color: <span class="comment">#ff7900;</span></span><br><span class="line">    line-height: 40px;</span><br><span class="line">    color: <span class="comment">#fff;</span></span><br><span class="line">    font-size: 14px;</span><br><span class="line">    border-radius: 2px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/11/登录页面/" data-id="cjz6vwla00008corm6pmoi04z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-注册页面" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/11/注册页面/" class="article-date">
+  <time datetime="2019-08-11T11:17:33.352Z" itemprop="datePublished">2019-08-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="注册页面"><a href="#注册页面" class="headerlink" title="注册页面"></a>注册页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_start();</span><br><span class="line"><span class="variable">$uname</span> = <span class="variable">$_POST</span>[<span class="string">'uname'</span>] ;</span><br><span class="line"><span class="variable">$upass</span> = <span class="variable">$_POST</span>[<span class="string">'upass'</span>] ;</span><br><span class="line"><span class="variable">$umail</span> = <span class="variable">$_POST</span>[<span class="string">'umail'</span>] ;</span><br><span class="line"><span class="variable">$img_url</span> = <span class="variable">$_POST</span>[<span class="string">'img_url'</span>] ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$uname</span> &amp;&amp; <span class="variable">$upass</span> &amp;&amp; <span class="variable">$umail</span> &amp;&amp; <span class="variable">$img_url</span>) &#123;</span><br><span class="line">   <span class="variable">$data</span> = time();</span><br><span class="line">    <span class="variable">$date</span> = <span class="string">"1||&#123;<span class="variable">$uname</span>&#125;||&#123;<span class="variable">$upass</span>&#125;||&#123;<span class="variable">$umail</span>&#125;||&#123;<span class="variable">$img_url</span>&#125;||0||<span class="variable">$data</span>.\n"</span>;</span><br><span class="line">   <span class="variable">$f</span> = fopen(<span class="string">'data/user.db'</span>, <span class="string">'a'</span>);</span><br><span class="line"></span><br><span class="line">    fwrite(<span class="variable">$f</span>, <span class="variable">$date</span>);</span><br><span class="line">    fclose(<span class="variable">$f</span>);</span><br><span class="line">    <span class="variable">$_SESSION</span>[<span class="string">'uname'</span>]=<span class="variable">$uname</span> ;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"&lt;script&gt;alert('注册成功，跳转登陆页面！'); location.href='login.html';&lt;/script&gt;"</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;注册用户&lt;/title&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;center&gt;</span><br><span class="line">&lt;h2&gt;请输入用户信息&lt;/h2&gt;</span><br><span class="line">&lt;form action=<span class="string">"reg_user.php"</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">    &lt;p&gt;用户名&lt;/p&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"uname"</span> placeholder=<span class="string">"输入用户名"</span>&gt;</span><br><span class="line">    &lt;p&gt;密码&lt;/p&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"upass"</span>  placeholder=<span class="string">"输入密码"</span>&gt;</span><br><span class="line">    &lt;p&gt;邮箱&lt;/p&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"umail"</span> placeholder=<span class="string">"输入邮箱"</span>&gt;</span><br><span class="line">    &lt;p&gt; 头像 &lt;/p&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"img_url"</span> placeholder=<span class="string">"输入头像"</span>&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"submit"</span>value=<span class="string">"提交"</span>&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/center&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/11/注册页面/" data-id="cjz6vwl9y0007cormerjx11w8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -106,7 +187,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/07/五角星/" data-id="cjz1cbzs90007f0rm1fuwcoqz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/07/五角星/" data-id="cjz6vwl9s0004cormp0kegwya" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +214,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/07/素数/" data-id="cjz1cbzsb0008f0rms23pa5g1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/07/素数/" data-id="cjz6vwla30009cormlyfj41z0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -160,7 +241,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjz1cbzrd0000f0rmjjuq2vds" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjz6vwl970000cormofu9hrvt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -187,7 +268,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjz1cbzrz0003f0rm5hxxz8vg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjz6vwla9000bcormafz47ojq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -291,7 +372,7 @@ CSS样式的引入：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjz1cbzrv0002f0rm6yu1ldjk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjz6vwl9n0002corm4vh7gjvt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -320,95 +401,7 @@ CSS样式的引入：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/linux网卡配置/" data-id="cjz1cbzs10004f0rmoodx0shm" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux常用命令" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/31/linux常用命令/" class="article-date">
-  <time datetime="2019-07-31T11:46:28.716Z" itemprop="datePublished">2019-07-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="LINUX常用命令"><a href="#LINUX常用命令" class="headerlink" title="LINUX常用命令"></a>LINUX常用命令</h2><p>linux命令格式：命令名+空格+参数（ls -al /temp）</p>
-<p>pwd：当前默认的用户目录<br>sudo：以管理员身份运行<br>cd：进入一个文件夹<br>su：切换用户<br>rm -rf ：删除文件<br>mkdir：创建文件夹<br>cd .. ：返回上一目录<br>vim/vi+文件后缀  生成一个新文件并编辑    i：插入编辑    w：保存   q：退出   !：强制执行<br>clear 或者ctrl+l：清屏<br>cat：查看当前文件内容<br>ifconfig：查看当前网卡信息=ipconfig</p>
-<p>开关机：<br>reboot：重启         init 6：重启        shutdown -r：重启          init 0：关机        poweroff：关机        shutdown halt  poweroff：关机            logout exit：退出</p>
-<p>文件读写操作：<br>touch：新建文件（ touch /tmp/hello.txt）         mkdir：新建文件夹（ mkdir hello）<br>mkdip -p：自动逐级建立文件夹<br>rm：删除文件（rm hello.txt）          rmdir删除文件夹（rmdir hello）<br>rm -rf：删除一个文件夹，文件夹内含有文件（ -r 参数逐级一个一个删除文件夹内容，-f 参数，不提示直接删除）</p>
-<p>复制和移动：<br>cp：复制文件或文件夹到指定位置                mv：移动文件或文件夹到指定位置<br>cp修改文件时备份  改成bak文件<br>cp -r 拷贝文件所有文件</p>
-<p>查看文件：<br>cat：显示一个文件的内容（cat /etc/passwd）           more：显示一个文件的内容，并且可控（more /etc/passwd）                   head：显示一个文件的前几行（head/etc/passwd）（默认10行） -n 选择几行               tail：显示文件的后几行，-f 动态查看文件里新增的内容多一行显示一行（tail/etc/passwd）</p>
-<p>搜索：<br>find：全盘查找文件               grep：全盘所有的文件中查找某些字符，或者在某个文件中查找               whereis：查找某个命令所在位置                which 找查找当前用户<br>greap -f：指定包含搜索模式的文件<br>bg 1：可以以一个任务在后台运行                 fg 1：放到前台运行             nohup：使命令永久进行（nohup COMMAND&amp;这样命令就可以永久在后台执行）           jobs：查看所有的后台任务</p>
-<blockquote>
-<p>：重定向  覆盖原来文件的内容          &gt;&gt;：不会覆盖原来文件的内容，而是追加到文件的尾部               &amp;：后台运行符          </p>
-</blockquote>
-<p>ls -a 显示隐藏文件                 ls -l  显示详细信息</p>
-<p>压缩/解压缩文件<br>tar -zxvf 解压文件   tar -zcvf 压缩文件</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/31/linux常用命令/" data-id="cjz1cbzs40005f0rmcva97mt3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/24/hello-world/" class="article-date">
-  <time datetime="2019-07-24T02:36:30.398Z" itemprop="datePublished">2019-07-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/24/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/24/hello-world/" data-id="cjz1cbzrq0001f0rmi7fysf46" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/linux网卡配置/" data-id="cjz6vwla5000acormvih7cjwj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -419,6 +412,11 @@ CSS样式的引入：
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -449,23 +447,23 @@ CSS样式的引入：
       <ul>
         
           <li>
-            <a href="/2019/08/07/新闻/">(no title)</a>
+            <a href="/2019/08/11/新闻主页/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/11/增加新闻/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/11/登录页面/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/11/注册页面/">(no title)</a>
           </li>
         
           <li>
             <a href="/2019/08/07/五角星/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/07/素数/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/03/PHP基础/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/03/js基础/">(no title)</a>
           </li>
         
       </ul>
