@@ -62,6 +62,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-select查询数据" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/12/select查询数据/" class="article-date">
+  <time datetime="2019-08-12T13:58:39.957Z" itemprop="datePublished">2019-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="mysql-select查询数据"><a href="#mysql-select查询数据" class="headerlink" title="mysql   select查询数据"></a>mysql   select查询数据</h2><p>在MySQL数据库中有个名为“information_schema”的数据库，其中的SCHEMATA,TABLES,COLUMNS表中分别保存着该库中的所有数据库名，表名，列名。</p>
+<h2 id="查找库名"><a href="#查找库名" class="headerlink" title="查找库名"></a>查找库名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT `SCHEMA_NAME` FROM `information_schema`.`SCHMATA`</span><br></pre></td></tr></table></figure>
+
+<h2 id="查找表名"><a href="#查找表名" class="headerlink" title="查找表名"></a>查找表名</h2><p>从上一步可以得到要查的数据库名为test，下面开始查找表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT `TABLE_NAME` FROM `information_schema`.`TABLES` WHERE `TABLE_SCHEMA` =<span class="string">'test'</span>;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2019/08/12/select查询数据/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/12/select查询数据/" data-id="cjz8gtvst00038ormhmza8uvi" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-新闻主页" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/11/新闻主页/" class="article-date">
@@ -79,7 +115,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/新闻主页/" data-id="cjz6vwl9w0006cormsrc9qgrj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/新闻主页/" data-id="cjz8gtvtp000a8orm6qkl8vr3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -106,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/增加新闻/" data-id="cjz6vwl9u0005cormyz314kca" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/增加新闻/" data-id="cjz8gtvtb00058ormd576qjo1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/登录页面/" data-id="cjz6vwla00008corm6pmoi04z" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/登录页面/" data-id="cjz8gtvtv000b8ormldy95iq8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -160,7 +196,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/注册页面/" data-id="cjz6vwl9y0007cormerjx11w8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/注册页面/" data-id="cjz8gtvtz000c8ormcf71m0l7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -187,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/07/五角星/" data-id="cjz6vwl9s0004cormp0kegwya" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/07/五角星/" data-id="cjz8gtvtd00068ormf41kjmd9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -214,7 +250,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/07/素数/" data-id="cjz6vwla30009cormlyfj41z0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/07/素数/" data-id="cjz8gtvtf00078ormafxus7xb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -241,7 +277,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjz6vwl970000cormofu9hrvt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjz8gtvs700008ormg9662n0z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -268,7 +304,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjz6vwla9000bcormafz47ojq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjz8gtvtn00098ormg8ovtrty" class="article-share-link">Share</a>
       
       
     </footer>
@@ -372,36 +408,7 @@ CSS样式的引入：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjz6vwl9n0002corm4vh7gjvt" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux网卡配置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/03/linux网卡配置/" class="article-date">
-  <time datetime="2019-08-03T14:01:54.786Z" itemprop="datePublished">2019-08-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="centos7-网卡配置"><a href="#centos7-网卡配置" class="headerlink" title="centos7 网卡配置"></a>centos7 网卡配置</h2><p>centos7网卡配置文件：/etc/sysconfig/network-scirpt/ifcfg-enoxxxxxx            将ONBOOT=yes是开启动态网络（DHCP）</p>
-<p>修改静态网络：<br>修改BOOTPROTO=static<br>IPV6INIT=no<br>IPV6_AUTOCONF=no<br>ONBOOT=yes<br>IPADDR=192.168.7.XXX<br>GATEWAY=192.168.7.1<br>NETMASK=255.255.255.0<br>systemctl  restart  network  重启网卡</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/linux网卡配置/" data-id="cjz6vwla5000acormvih7cjwj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjz8gtvsw00048ormlgi0lefc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -447,6 +454,10 @@ CSS样式的引入：
       <ul>
         
           <li>
+            <a href="/2019/08/12/select查询数据/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2019/08/11/新闻主页/">(no title)</a>
           </li>
         
@@ -460,10 +471,6 @@ CSS样式的引入：
         
           <li>
             <a href="/2019/08/11/注册页面/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/07/五角星/">(no title)</a>
           </li>
         
       </ul>
